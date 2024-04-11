@@ -1,0 +1,89 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    /* border:1px solid black; */
+    overflow: hidden;
+    margin: 5rem 0;
+    /* position: absolute; */
+}
+/* .nav-bar.navigation{
+   background-color: #f4f3f3;
+ } */
+.logo{
+    width: 7rem;
+    position: absolute;
+    left:2rem;
+    top:2rem;
+   
+}
+.logo:hover{
+   transform: scale(8rem 8rem);
+}
+.humberger{
+    position: absolute;
+    right:2rem;
+    top:2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 21px;
+    margin: 1rem;
+    
+    /* border:2px solid black; */
+
+}
+
+ .humberger .hum1{
+    height: 1px;
+    width: 80%;
+    background-color: #083634;
+    border-radius: 10px;
+ }
+ .humberger .hum2{
+    height: 1px;
+    width: 60%;
+    align-self: flex-end;
+    background-color: #083634;
+    border-radius: 10px;
+    transition:align-self 5s ease;
+ }
+ 
+ .humberger .hum3{
+    height: 1px;
+    width: 80%;
+    background-color: #083634;
+    border-radius: 10px;
+ }
+.navbar-links{
+    display: flex;
+    position: absolute;
+    top:90px;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+    height:0px;
+    font-size: 1.2rem;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    overflow: hidden;   
+    transition: 0.5s;
+    z-index: 1000;
+ }
+ .navbar-links.active{
+    height: 500px;
+ }
+
+ .navbar-links a{
+    /* margin: 5rem; */
+    text-decoration: none;
+    color:aliceblue;
+ }
+ 
+
+ .navbar-links a:hover{
+    color:#053710;
+ }

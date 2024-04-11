@@ -1,0 +1,49 @@
+*,::after,::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.project-page{
+    color:black;
+    opacity:1;
+    text-align: center;
+    position: relative;
+    left:10%;
+    font-size: 2.5rem;
+    font-family: 'Space Mono', monospace;
+}
+   
+.project-page::before,
+.project-page::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom: 0;
+    top:0;
+}
+
+.project-page::before{
+    background-color:rgb(255, 255, 255);
+    animation: typewriter 9s steps(44) 2s forwards;
+}
+
+.project-page::after{
+    width:1px;
+    background-color: black;
+    animation: typewriter 9s steps(44) 2s forwards, blink 2.2s steps(44) backwards infinite;
+
+}
+
+
+@keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  @keyframes blink {
+    from {
+      background: black;
+    }
+  }

@@ -1,0 +1,282 @@
+/*this is the animation for the nav bar burger menu*/
+
+.hum1.open1{
+    /* background-color:aliceblue; */
+    transition: all 1s;
+    animation-name: hum1;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.hum2.open2{
+    /* background-color:aliceblue; */
+    transition: all 1s;
+    animation-name: hum2;
+    animation-timing-function:ease-out;
+
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.hum3.open3{
+    /* background-color:aliceblue; */
+    transition: all 1s;
+    animation-name: hum1;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes hum1 {
+    0%{
+        width:80%
+    }
+    50%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+        align-self: flex-end;
+    }
+    
+}
+@keyframes hum2 {
+    0%{
+        width:60%;
+        
+    }
+    50%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+        align-self: flex-start;
+      
+    }
+    
+}
+
+.hum1,.hum2,.hum3{
+    transition: all 1s;
+}
+
+/* Here a styling and animation for the projects section*/
+
+ .over{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .over h1{
+    color:white;
+    margin: 0 auto;
+    height: 20vh;
+ }
+ 
+ .passion-image{
+    height: 70vh;
+    width: 80%;
+    /* margin:10% 60% 10% 20%; */
+    
+    background-image: url('../images/woman.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: animate-small;
+    animation-timing-function: ease-in-out;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse; 
+    transition: all 2s ease-in-out;
+
+}
+
+ 
+
+
+.Passion{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url('../images/woman.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    animation-name: animate;
+    animation-timing-function: ease-out;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    transition: all 2s ease-out;
+}
+
+@keyframes animate{
+    0%{
+        background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url("../images/woman.jpg");
+    
+    }
+    20%{
+        background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url("../images/woman.jpg");
+    
+            }
+    40%{
+        background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url("../images/woman.jpg");
+    
+    }
+    60%{
+        background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url("../images/woman.jpg");
+    
+        
+        
+    }
+    80%{
+        background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url("../images/woman.jpg");
+    
+           }
+    100%{
+        background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url("../images/woman.jpg");
+    
+        
+    }
+}
+@keyframes animate-small{
+    0%{
+        background-image:url("../images/2.jpg");
+        transform:scale(1,1);
+    }
+    20%{
+        background-image:url("../images/3.jpg");
+        transform:scale(1.05,1.05)
+    }
+    40%{
+        background-image:url("../images/4.jpg");
+        transform:scale(1,1)
+    }
+    60%{
+        background-image:url("../images/5.jpg");
+
+        transform: scale(1.05,1.05);
+    }
+    80%{
+        background-image:url("../images/6.jpg");
+        transform: scale(1,1);
+
+    }
+    100%{
+        background-image:url("../images/1.jpg");
+        transform: scale(1.05,1.05);
+    }
+}
+
+
+
+/* this is the animation for the texts in the design */
+
+p,h2,h1,h3,input,textarea,button,i{
+    opacity: 0; 
+    position: relative;
+    bottom: -40px;
+    transition: all 0.8s ease-out;
+   
+}
+
+h4{
+    opacity: 0; 
+    position: relative;
+    bottom: -40px;
+    transition: all 0.8s ease-out; 
+}
+
+button.show{
+    transition-delay: 1s;
+    transform: translate(500px,-10px);
+}
+
+h3.show{
+    transition-delay: 0.5s;
+}
+
+.project{
+    opacity: 0;
+    position: relative;
+    bottom: -40px;
+    transition: all 0.8s ease-out;
+}
+
+input:nth-of-type(2).show
+{
+    transition-delay:0.5s;
+}
+input:nth-of-type(3).show
+{
+    transition-delay:1s;
+}
+
+textarea{
+    transition-delay: 1.5s;
+}
+
+.show {
+    opacity: 1;
+    bottom: 0;
+}
+
+.project:nth-of-type(2).show {
+    transition-delay: 0.5s;
+}
+
+.project:nth-of-type(3).show {
+    transition-delay: 1s;
+}
+
+.project:nth-of-type(4).show {
+    transition-delay: 0.5s;
+}
+
+.project:nth-of-type(5).show {
+    transition-delay: 1s;
+}
+.project:nth-of-type(6).show {
+    transition-delay: 1.5s;
+}
+
+i:nth-last-of-type(1).show{
+    transition-delay: 0.2s;
+}
+i:nth-last-of-type(2).show{
+    transition-delay: 0.4s;
+}
+i:nth-last-of-type(3).show{
+    transition-delay: 0.6s;
+}
+i:nth-last-of-type(4).show{
+    transition-delay: 0.8s;
+}
+i:nth-last-of-type(5).show{
+    transition-delay: 1s;
+}
+i:nth-last-of-type(6).show{
+    transition-delay: 1.2s;
+}
+i:nth-last-of-type(7).show{
+    transition-delay: 1.4s;
+}
+i:nth-last-of-type(8).show{
+    transition-delay: 1.6s;
+}
+i:nth-last-of-type(9).show{
+    transition-delay: 1.8s;
+}
+i:nth-last-of-type(10).show{
+    transition-delay: 2s;
+}
+
+
+
+
+
+

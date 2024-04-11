@@ -1,0 +1,32 @@
+@media (min-width:700px) {
+    header{
+        flex-direction: row-reverse;
+    }
+    header h1{
+        font-size: 4rem;
+    }
+    /* .profile-picture{
+        width: 500px;
+        height: 500px;
+    } */
+    .programming-languages-icons{
+        max-width: 50%;
+    }
+
+    .about-me{
+        flex-direction: row;
+    }
+
+    .about-me-img-container{
+        margin: var(--body-margin) 4rem;
+    }
+    .over{
+        flex-direction: row;
+    }
+    .contact-form{
+        max-width: 40%;
+    }
+    .footer-container{
+        flex-direction: row;
+    }
+}

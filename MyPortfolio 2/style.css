@@ -1,0 +1,165 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans:ital,wght@0,300;0,500;1,400&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&family=Yeon+Sung&display=swap');
+
+:root{
+    --body-margin:2rem;
+    --content-padding:1rem;
+    --primary-color:#008e9b;
+    --secondary-color:#002c38;
+    --third-color:#e6f4f1;
+
+}
+
+ *,::after,::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Mono', monospace;
+}
+section *{
+    margin: var(--content-padding);
+    padding :var(--content-padding);
+}
+
+
+ header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    margin: 3rem ;
+    
+
+}
+header h1{
+    font-size: 3rem;
+    font-family:'Yeon Sung', cursive;
+    color:#474554;
+}
+
+.profile-picture{
+    width: 350px;
+    height: 350px;
+    margin: 2rem 0;
+}
+
+.languages{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    padding:4rem 0;
+}
+.languages h1{
+    font-size: 2rem;
+}
+.programming-languages-icons i{
+   font-size: 50px;
+   margin: 1rem;
+}
+.programming-languages-icons{
+    max-width: 90%;
+    margin: auto;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:90%;
+}
+.about-me-img-container{
+    width: 300px;
+    height: 550px;
+    background-color: #002c38;
+    margin: var(--body-margin) 1rem;
+
+}
+.about-me img{
+    position: relative;
+    left:5px;
+    border-radius:10px;
+    max-height: 500px;
+    
+}
+.projects-container{
+    /* margin:4rem 0; */
+    background-color:rgba(121, 121, 121, 0.02)
+    
+}
+.projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+ 
+}
+
+.project{
+    box-shadow: 1px 1px 1px 1px inset;
+    flex-wrap: nowrap;
+    height: 500px;
+    text-align: center;
+    /* margin:1rem; */
+}
+.project img{
+    height: 60%;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    max-width: 80%;
+    align-content: center;
+    flex-direction: column;
+    margin:4rem auto;
+    gap:15px;
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    box-shadow: 0.4px 0.4px 0.4px 0.4px inset;
+    padding: 20px;
+}
+.contact-me {
+    text-align: center;
+    margin:8rem 0;
+}
+.contact-form input,textarea{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-family:'Yeon Sung', cursive;
+
+}
+.contact-form input{
+    height: 2rem;
+    padding:5px;
+    margin:4px;
+}
+.contact-form input::placeholder{
+    font-family:'Yeon Sung', cursive;
+}
+
+footer{
+    margin:4rem 0;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: var(--body-margin);
+}
+
+.social-media-icon{
+    width: 1.3rem;
+    height: 1.3rem;
+
+}
+
+
+
